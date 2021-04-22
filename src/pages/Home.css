@@ -1,0 +1,149 @@
+#home--header {
+  align-items: center;
+  background-color: rgb(75, 131, 249);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 12vh;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#home--link-cart {
+  color: white;
+  font-size: inherit;
+  font-weight: 900;
+  text-decoration: none;
+  transition: all ease 200ms;
+}
+
+#home--link-cart:hover {
+  text-decoration: underline white 2px;
+}
+
+
+#home--search {
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 4vh;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.home--product-card input {
+  border: none;
+  color: black;
+  font-size: inherit;
+  text-align: center;
+  width: 2.5vw;
+}
+
+.home--product-card input:focus {
+  outline: none;
+}
+
+#home--search input {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  height: 101%;
+  padding-left: 10px;
+  width: 30vw;
+}
+
+#home--search select {
+  background-color: white;
+  border: none;
+  color: rgb(117, 117, 117);
+  font-family: inherit;
+  font-size: inherit;
+  height: inherit;
+  text-align-last: center;
+  width: fit-content;
+}
+
+#home--search select:hover {
+  cursor: pointer;
+}
+
+#home--search select:focus, #home--search input:focus {
+  outline: none;
+}
+
+#home--products-table {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 12vh;
+  max-width: 100vw;
+}
+
+.home--product-card {
+  background-color: inherit;
+  border-radius: 30px;
+  margin: 10px 1%;
+  max-width: 16%;
+  min-width: 16%;
+  padding: 10px;
+  text-align: center;
+  transition: all ease 500ms;
+}
+
+.home--product-card:hover {
+  box-shadow: 0 0 0.5em gray;
+}
+
+.home--product-card button {
+  background-color: inherit;
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+  padding: 5px;
+}
+
+.home--product-card button:hover {
+  cursor: pointer;
+  text-decoration: black underline;
+}
+
+#home--loading {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+
+#home--left-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#home--left-header img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+#home--right-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 100%;
+}
+
+#home--right-header p {
+  margin: 0;
+}

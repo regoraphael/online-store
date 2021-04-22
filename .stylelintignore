@@ -1,1 +1,3 @@
 src/index.css
+src/pages/Home.jsx
+src/contextAPI/provider.js

@@ -1,23 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ProductList from './components/ProductList';
-import ShoppingCart from './components/ShoppingCart';
-import ProductDetails from './components/ProductDetails';
-import CheckoutCart from './components/CheckoutCart';
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router';
+import Home from './pages/Home';
 import './App.css';
+import ShoppingCart from './pages/ShoppingCart';
 
 function App() {
-  localStorage.setItem('products', []);
+  document.title = 'Online Store';
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={ ProductList } />
-        <Route exact path="/shopping-cart" component={ ShoppingCart } />
-        <Route
-          path="/product/:id"
-          render={ (props) => <ProductDetails { ...props } /> }
-        />
-        <Route path="/checkout" component={ CheckoutCart } />
+        <Route exact path="/" component={ Home } />
+        <Route path="/shopping-cart" component={ ShoppingCart } />
       </Switch>
     </BrowserRouter>
   );

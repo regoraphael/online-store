@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+}
+
+#cart--header {
+  align-items: center;
+  background-color: rgb(75, 131, 249);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 12vh;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+#cart--left-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-around;
+  left: 40px;
+  position: fixed;
+  width: fit-content;
+}
+
+.cart--product-tr img {
+  height: 150px;
+}
+
+#cart--left-header img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+#cart--right-header {
+  align-items: center;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  font-weight: 900;
+  justify-content: space-around;
+  position: fixed;
+  right: 40px;
+}
+
+#cart--body {
+  color: grey;
+  display: flex;
+  font-weight: 600;
+  flex-direction: row;
+  margin-top: 14vh;
+}
+
+#cart--empty-cart {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
+  text-align: center;
+  width: fit-content;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+td button {
+  background-color: gray;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  font-weight: 900;
+  height: 20px;
+  margin: 0 5px;
+  width: 20px;
+}
+
+td button:hover {
+  box-shadow: 0 0 10px rgb(75, 131, 249);
+}
+
+.cart--product-tr {
+  border-radius: 30px;
+  transform: scale(0.99);
+  transition: all ease 200ms;
+}
+
+.cart--product-tr:hover {
+  box-shadow: 0 0 15px grey;
+  transform: scale(1);
+}
+
+.cart--link-home {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: inherit;
+  font-weight: 900;
+  margin-right: 20px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#cart--empty-cart .cart--link-home {
+  border: 1px solid grey;
+  color: grey;
+}
+
+#cart--resume-order {
+  align-items: center;
+  border: 2px solid grey;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 37vh;
+  justify-content: space-around;
+  padding: 40px;
+  position: fixed;
+  right: -1vw;
+  top: 25vh;
+  transition: all ease 200ms;
+}
+
+#cart--resume-order button {
+  background-color: inherit;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color: grey;
+  padding: 5px;
+}
+
+#cart--resume-order button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

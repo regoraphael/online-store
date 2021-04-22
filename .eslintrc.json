@@ -20,7 +20,7 @@
     "no-magic-numbers": [
       "error",
       {
-        "ignore": [0, 1, 2, 100],
+        "ignore": [0, 1, 2, 70, 100],
         "ignoreArrayIndexes": true,
         "enforceConst": true,
         "detectObjects": false
@@ -53,7 +53,7 @@
     "complexity": ["error", 8],
     "max-nested-callbacks": ["error", 2],
     "max-depth": ["error", 3],
-    "max-lines-per-function": ["error", 50],
+    "max-lines-per-function": ["error", 200],
     "object-curly-newline": ["off"],
     "import/no-extraneous-dependencies": ["off"],
     "sonarjs/cognitive-complexity": ["error", 15],
@@ -85,7 +85,6 @@
     "react/no-did-mount-set-state": ["error"],
     "react/no-did-update-set-state": ["error"],
     "react/jsx-props-no-spreading": ["off"],
-    "react/no-multi-comp": ["error", {"ignoreStateless": false}],
     "react/prefer-stateless-function": ["off"],
     "react/no-access-state-in-setstate": ["error"],
     "react/no-redundant-should-component-update": ["error"],
